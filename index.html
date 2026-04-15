@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Sistem Web Terintegrasi - Angelo</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        background-color: #f4f6f9; /* Background dasar */
+        overflow: hidden; /* Mencegah scroll ganda di halaman utama */
+      }
+
+      /* Container utama dibuat 100% penuh */
+      .main-wrapper {
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+        border-collapse: collapse;
+      }
+
+      /* Header */
+      .header {
+        /* Menggunakan warna solid elegan agar teks lebih mudah dibaca */
+        background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+        color: #ffffff;
+        height: 90px;
+        text-align: center;
+      }
+
+      .header h2 {
+        margin: 0;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+      }
+
+      /* Menu Sidebar */
+      .sidebar {
+        width: 250px;
+        vertical-align: top;
+        background-color: #f8f9fa;
+        padding: 25px 20px;
+        border-right: 1px solid #dee2e6;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      ul li {
+        margin-bottom: 12px;
+      }
+
+      a {
+        display: block;
+        text-decoration: none;
+        color: #4a5568;
+        font-weight: 600;
+        padding: 14px 20px;
+        background-color: white;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        border: 1px solid #e2e8f0;
+      }
+
+      a:hover {
+        background-color: #4a5568;
+        color: white;
+        transform: translateX(5px); /* Efek geser kanan saat disentuh */
+      }
+
+      /* Iframe untuk konten */
+      .content-area {
+        padding: 0;
+        vertical-align: top;
+      }
+
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        display: block;
+      }
+
+      /* Footer */
+      .footer {
+        height: 40px;
+        text-align: center;
+        background-color: #1a202c;
+        color: #a0aec0;
+        font-size: 0.85em;
+      }
+    </style>
+  </head>
+  <body>
+    <table class="main-wrapper">
+      <tr>
+        <td colspan="2" class="header">
+          <h2>PORTAL TUGAS ANGELO</h2>
+        </td>
+      </tr>
+
+      <tr style="height: 100%">
+        <td class="sidebar">
+          <ul>
+            <li><a href="home.html" target="konten">Beranda</a></li>
+            <li><a href="profil.html" target="konten">Profil Saya</a></li>
+            <li>
+              <a href="latihan_1.html" target="konten">Latihan Tabel 1</a>
+            </li>
+            <li><a href="latihan2.html" target="konten">Latihan Tabel 2</a></li>
+            <li>
+              <a href="Soal_Latihan.html" target="konten">Soal Latihan</a>
+            </li>
+          </ul>
+        </td>
+        <td class="content-area">
+          <iframe name="konten" src="home.html"></iframe>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2" class="footer">
+          Dibuat oleh Angelo Pandoh C. | NIM: 231011450196
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

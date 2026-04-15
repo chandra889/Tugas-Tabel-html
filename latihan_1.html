@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      table {
+        border-collapse: separate;
+        border-spacing: 8px;
+        width: 90%;
+        background: white;
+        padding: 15px;
+        border-radius: 15px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+      }
+      td {
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        color: #4a5568;
+      }
+      .bg-orange {
+        background: #ed8936;
+        color: white;
+        font-weight: bold;
+        border: none;
+      }
+      .bg-blue {
+        background: #ebf8ff;
+        font-weight: 600;
+        color: #3182ce;
+      }
+      img {
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+      }
+      img:hover {
+        transform: scale(1.03);
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="color: #2d3748">Latihan Layout Tabel</h2>
+    <table>
+      <tr>
+        <td colspan="3" class="bg-orange">Kolom 1, 2, dan 3 dengan Colspan</td>
+      </tr>
+      <tr>
+        <td rowspan="2" class="bg-blue">Kolom 1A + 1B<br />(Rowspan)</td>
+        <td style="font-weight: bold">KOLOM 2A</td>
+        <td rowspan="2" class="bg-blue">Kolom 3A + 3B<br />(Rowspan)</td>
+      </tr>
+      <tr>
+        <td>
+          <img src="Perform4.gif" width="200" height="200" alt="Preview" />
+        </td>
+      </tr>
+      <tr>
+        <td>Kolom 1C</td>
+        <td>Kolom 2C</td>
+        <td>Kolom 3C</td>
+      </tr>
+    </table>
+  </body>
+</html>
